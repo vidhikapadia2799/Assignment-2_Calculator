@@ -1,6 +1,6 @@
 // a promise
-let promise = new Promise(function (resolve, reject) {
-  setTimeout(function () {
+let promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
     resolve("I am inside");
   }, 5000);
 });
@@ -8,11 +8,13 @@ let promise = new Promise(function (resolve, reject) {
 // async function
 async function asyncFunc() {
   // wait until the promise resolves
-  let result = await promise;
-
-  console.log(result);
+  try {
+    let result = await promise;
+    console.log(result);
+  } catch (e) {
+    console.log(e);
+  }
   console.log("I am outside");
 }
 
-// calling the async function
 asyncFunc();
