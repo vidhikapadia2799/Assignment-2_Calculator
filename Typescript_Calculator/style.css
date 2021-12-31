@@ -1,0 +1,26 @@
+.a_cal {
+  width: 344px;
+  /* border: 1px dashed red; */
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4.5em;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 1em;
+  background-color: #f1f3f6;
+}
+.dropdown-menu {
+  min-width: 120px !important;
+}
+table tr td input {
+  width: 100%;
+  border: none;
+  background-color: #f1f3f6;
+  text-align: right;
+  font-weight: bold;
+  font-size: xx-large;
+}
